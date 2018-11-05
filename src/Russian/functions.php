@@ -118,7 +118,7 @@ function detectGender($fullName)
  */
 function normalizeFullName($name)
 {
-    $name = preg_replace('~[ ]{2,}~', null, trim($name));
+    $name = preg_replace('~[ ]{2,}~', " ", trim($name));
     return $name;
 }
 
